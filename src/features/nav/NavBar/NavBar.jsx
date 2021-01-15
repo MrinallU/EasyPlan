@@ -38,7 +38,7 @@ class NavBar extends Component {
         <Container>
           <Menu.Item as={NavLink} exact to='/' header>
             <img src='/assets/logo.png' alt='logo' />
-            Re-vents
+            EasyPlan
           </Menu.Item>
           <Menu.Item as={NavLink} exact to='/events' name='Events' />
           {authenticated && (
