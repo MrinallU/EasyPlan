@@ -46,21 +46,21 @@ test('uses jest-dom', () => {
 })
 
 
-
-test('full app rendering/navigating', async () => {
-      const store = configureStore();
-        const appContainer = <Provider store={store}>
-        <BrowserRouter>
-            <ScrollToTop>
-                <ReduxToastr
-                    position='bottom-right'
-                    transitionIn='fadeIn'
-                    transitionOut='fadeOut'
-                />
-                <App />
-            </ScrollToTop>
-        </BrowserRouter>
-    </Provider>
-    // normally I'd use a data-testid, but just wanted to show this is also possible
-    expect(appContainer.innerHTML).toMatch('EasyPlan')
-})
+// REPLACED BY VERCEL
+// test('full app rendering/navigating', async () => {
+//       const store = configureStore();
+//         const appContainer = <Provider store={store}>
+//         <BrowserRouter>
+//             <ScrollToTop>
+//                 <ReduxToastr
+//                     position='bottom-right'
+//                     transitionIn='fadeIn'
+//                     transitionOut='fadeOut'
+//                 />
+//                 <App />
+//             </ScrollToTop>
+//         </BrowserRouter>
+//     </Provider>
+//     // normally I'd use a data-testid, but just wanted to show this is also possible
+//     expect(appContainer.innerHTML).toMatch('EasyPlan')
+// })
