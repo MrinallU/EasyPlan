@@ -62,5 +62,5 @@ test('full app rendering/navigating', async () => {
         </BrowserRouter>
     </Provider>
     // normally I'd use a data-testid, but just wanted to show this is also possible
-    expect(appContainer.innerHTML).toMatch('Revents')
+    expect(appContainer.innerHTML).toMatch('EasyPlan')
 })
