@@ -6,7 +6,7 @@ import 'firebase/storage';
 
 const firebaseConfig = {
     apiKey: "AIzaSyDray1cP6fR0t3Iy5CUImvr5i8tsJ1VWJs",
-    authDomain: "easyplan.firebaseapp.com",
+    authDomain: "easy-plan-mrinallu.vercel.app",
     databaseURL: "https://easyplan.firebaseio.com",
     projectId: "easyplan",
     storageBucket: "easyplan.appspot.com",
