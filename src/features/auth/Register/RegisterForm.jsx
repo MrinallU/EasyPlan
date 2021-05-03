@@ -63,8 +63,6 @@ const RegisterForm = ({
           >
             Register
           </Button>
-          <Divider horizontal>Or</Divider>
-          <SocialLogin />
         </Segment>
       </Form>
     </div>
