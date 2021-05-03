@@ -1,34 +1,38 @@
-import React from 'react';
-import { Form, Segment, Button, Label, Divider } from 'semantic-ui-react';
-import { reduxForm, Field } from 'redux-form';
-import TextInput from '../../../app/common/form/TextInput';
-import { login, socialLogin } from '../../auth/authActions';
-import { connect } from 'react-redux';
-import SocialLogin from '../SocialLogin/SocialLogin';
+import React from "react";
+import { Form, Segment, Button, Label, Divider } from "semantic-ui-react";
+import { reduxForm, Field } from "redux-form";
+import TextInput from "../../../app/common/form/TextInput";
+import { login, socialLogin } from "../../auth/authActions";
+import { connect } from "react-redux";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const actions = {
   login,
-  socialLogin
+  socialLogin,
 };
 
 const LoginForm = ({ login, handleSubmit, error, socialLogin }) => {
   return (
-    <Form size='large' onSubmit={handleSubmit(login)} autoComplete='off'>
+    <Form size="large" onSubmit={handleSubmit(login)} autoComplete="off">
       <Segment>
         <Field
-          name='email'
+          name="email"
           component={TextInput}
-          type='text'
-          placeholder='Email Address'
+          type="text"
+          placeholder="Email Address"
         />
         <Field
-          name='password'
+          name="password"
           component={TextInput}
-          type='password'
-          placeholder='password'
+          type="password"
+          placeholder="password"
         />
-        {error && <Label basic color='red'>{error}</Label>}
-        <Button fluid size='large' color='teal'>
+        {error && (
+          <Label basic color="red">
+            {error}
+          </Label>
+        )}
+        <Button fluid size="large" color="teal">
           Login
         </Button>
       </Segment>
@@ -39,4 +43,4 @@ const LoginForm = ({ login, handleSubmit, error, socialLogin }) => {
 export default connect(
   null,
   actions
-)(reduxForm({ form: 'loginForm' })(LoginForm));
+)(reduxForm({ form: "loginForm" })(LoginForm));
